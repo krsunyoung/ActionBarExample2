@@ -16,6 +16,11 @@ public class ActionItemsActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
+        //다른 예제 있던 방식
+        //inflate menu resource(xml)
+//        getMenuInflater().inflate(R.menu.menu_main, menu);
+//        return  true;
+
         menu.add("Save").setIcon( android.R.drawable.ic_menu_edit ).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
         menu.add("Search").setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
         menu.add("Refresh").setIcon( android.R.drawable.ic_popup_sync ).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
